@@ -26,3 +26,7 @@ The first thing I did was to calculate the revenue for each of the row on the Sa
 =F2*G2
 
 For the result i got from the dataset worked on 
+
+
+For easier visualization I added a screenshoot of my outcome
+
