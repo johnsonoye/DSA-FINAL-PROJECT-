@@ -101,3 +101,85 @@ SELECT sum(revenue)as totalsales4socks FROM SalesData WHERE PRODUCT = 'SOCKS'
 SELECT sum(revenue) as totalsale4jacket  FROM SalesData WHERE PRODUCT = 'JACKET'
 
 
+- Find The Number Of Sales Transactions In Each Region.
+
+SELECT REGION,
+count(orderid)as regionalsales from [dbo].[SalesData] 
+GROUP BY REGION
+ORDER BY regionalsales DESC
+
+
+- HIGHEST SELLING PRODUCT BY TOTAL SALES VALUE
+
+select top 1 (product),
+sum (revenue) as totalsales from [dbo].[SalesData]
+group by product
+
+
+- TOTAL REVENUE PER PRODUCT
+
+SELECT PRODUCT,
+SUM(REVENUE) AS TOTALREV FROM[dbo].[SalesData]
+GROUP BY PRODUCT
+ORDER BY TOTALREV DESC
+
+
+- MONTHLY SALES TOTAL FOR THE CURRENT YEAR
+
+SELECT MONTH (ORDERDATE)AS MONTHS,
+SUM (REVENUE) AS MONTHLYSALES
+FROM[dbo].[SalesData]
+WHERE
+YEAR(ORDERDATE)= YEAR (GETDATE())
+GROUP BY MONTH (ORDERDATE) 
+ORDER BY MONTHS
+
+
+- TOP 5 CUSTOMERS BY TOTAL PURCHASE AMOUNT
+
+
+SELECT TOP 5 (CUSTOMER_ID) AS TOPCUSTOMER, SUM (REVENUE) AS TOTAL_PURCHASEPRICE FROM [dbo].[SalesData] GROUP BY Customer_Id ORDER BY TOPCUSTOMER DESC
+
+- PERCENTAGE OF TOTAL SALES CONTRIBUTED BY EACH REGION
+
+```sql
+SELECT REGION,
+SUM(REVENUE) AS TOTAL_SALES,
+(SUM(REVENUE)*100.0/(SELECT SUM(REVENUE) FROM[dbo].[SalesData]))
+AS PERCENTAGE_TOTAL_SALES
+FROM [dbo].[SalesData] 
+GROUP BY REGION
+ORDER BY PERCENTAGE_TOTAL_SALES DESC
+
+
+- PRODUCTS WITH NO SALES IN THE LAST QUARTER
+
+SELECT OrderID,
+Product 
+FROM [dbo].[SalesData] WHERE OrderID  NOT IN (SELECT OrderID 
+FROM [dbo].[SalesData]
+WHERE OrderDate >=
+DATEADD (QUARTER, -1,GETDATE ()))
+
+
+SELECT OrderID  
+ FROM SalesData 
+ WHERE Product NOT IN (
+ SELECT DISTINCT Product  
+ FROM SalesData  WHERE OrderDate between
+ dateadd (quarter, -1, getdate())
+ and getdate())
+
+## Microsoft Power BI
+
+This is the third Analysis Tool I used in exploration of the Sales Data. PowerBI is a business analytics service by Microsoft that enables users to visualize and Analyze data from various sources. It provides interactive dashboards, reports and data visualization tools to help organizations make data-driven decisions.
+
+I am tasked to use PowerBI to:
+- Create a dashboard that visualizes the insights found in Excel and SQL. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
+
+The first step I took was to get my data from Excel Workbook, transform my data and check the data quality, profile and distribution. After transfroming my data into a clean state I proceeded to create the following Visuals from my dataset.
+
+
+
+
+
