@@ -1,4 +1,4 @@
-[githubsales.xlsx](https://github.com/user-attachments/files/20933674/githubsales.xlsx)# PROJECT TITLE: LITA_CAPSTONE_PROJECT SALES DATA
+# PROJECT TITLE: LITA_CAPSTONE_PROJECT SALES DATA
 
 [Project Overview](#project-overview)  
 [Analysis Tools](#analysis-tools)  
@@ -26,9 +26,8 @@ The first thing I did was to calculate the revenue for each of the row on the Sa
 =F2*G2
 
 For the result i got from the dataset worked on 
-[Uploading githubsales.xlsx…](githubsales)
+
 
 
 For easier visualization I added a screenshoot of my outcome
-![Uploading Capture.PNG…](Dataset Screenshot)
 
