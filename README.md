@@ -79,6 +79,52 @@ I used the SQL Tool to answer the following questions after I had successfully i
 - calculate the percentage of total sales contributed by each region.
 - identify products with no sales in the last quarter.
 
+
+## Microsoft Power BI
+
+This is the third Analysis Tool I used in exploration of the Sales Data. PowerBI is a business analytics service by Microsoft that enables users to visualize and Analyze data from various sources. It provides interactive dashboards, reports and data visualization tools to help organizations make data-driven decisions.
+
+I am tasked to use PowerBI to:
+- Create a dashboard that visualizes the insights found in Excel and SQL. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
+
+The first step I took was to get my data from Excel Workbook, transform my data and check the data quality, profile and distribution. After transfroming my data into a clean state I proceeded to create the following Visuals from my dataset.
+
+![14](https://github.com/user-attachments/assets/05413691-70ed-4d6a-8fb4-1655591a0b5f)
+
+- Regional Performance
+- Monthly Overview of Sales for Year 2023 and 2024
+- Sum of Quantity by Product
+- Sum of Revenue by Product
+
+![15](https://github.com/user-attachments/assets/d1ca1ae6-2d92-4e0f-b9f7-51ced5315c02)
+
+Slicers for Product and Region was added to create and interesting report and dashboard
+
+## FINDINGS AND RECOMMENDATIONS
+### Prouct Performance
+- My analysis reveals that 'Hat' has the highest sales with a total of 15,929 showing a strong and steady market demand.
+- Shoes generated the most revenue with a total of 613,380.
+- There is room for sales improvement by conducting regular customer feedbacks in order to know why some products are raking in low sales.
+
+![16](https://github.com/user-attachments/assets/bd590c79-251a-426f-b020-e6e8d2958ecc)
+
+![17](https://github.com/user-attachments/assets/9b353eb1-3a06-403b-9783-8a37f279b6e1)
+
+### Regional Performance
+- Amongst the four (4) regions in the dataset, South had the most sales with a total 927,820 while West generated the lowest sales with a total of 300,345.
+- This shows that there need for sales awareness e.g advertising, marketing to be created in the West region in order to boost their sales. Offer Sales plan and also Easy buy plan in the West.
+
+![18](https://github.com/user-attachments/assets/7b27ef4d-6504-4700-b4bc-00fba6fbd66f)
+
+### Monthly Sales Trend
+
+- Sales were higher in the month of February of both year 2023 and 2024 while in year 2023 April sales was the lowest with a total sales of 7,425 and in year 2024 July had the lowest sales with a total of 37,200.
+- There is need for the organization to coduct a sales poll in order to know why sales are particularly low in April of 2023 and 2024 this will give an insight into how sales can be boosted in those months in the coming year.
+
+![19](https://github.com/user-attachments/assets/32bf7848-6838-429a-8887-404e17daca73)
+
+
+
 I ran various codes in order to be able to extract the neccesary information i needed which are embedded in the Salesdata Table on my LITA_DB
 
 
@@ -169,17 +215,4 @@ SELECT OrderID
  FROM SalesData  WHERE OrderDate between
  dateadd (quarter, -1, getdate())
  and getdate())
-
-## Microsoft Power BI
-
-This is the third Analysis Tool I used in exploration of the Sales Data. PowerBI is a business analytics service by Microsoft that enables users to visualize and Analyze data from various sources. It provides interactive dashboards, reports and data visualization tools to help organizations make data-driven decisions.
-
-I am tasked to use PowerBI to:
-- Create a dashboard that visualizes the insights found in Excel and SQL. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
-
-The first step I took was to get my data from Excel Workbook, transform my data and check the data quality, profile and distribution. After transfroming my data into a clean state I proceeded to create the following Visuals from my dataset.
-
-
-
-
 
