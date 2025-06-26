@@ -23,7 +23,7 @@ I am to explore the Sales Data to uncover key insights such as top-selling produ
 # OUTCOME OF SALES DATA PROJECT USING MICROSOFT EXCEL
 The first thing I did was to calculate the revenue for each of the row on the Sale Dataset by multiplying the Quantity row by the UnitPrice row
 
-=F2*G2
+[=F2*G2](.html)
 
 For the result i got from the dataset worked on 
 
@@ -33,3 +33,7 @@ For the result i got from the dataset worked on
 For easier visualization I added a screenshoot of my outcome
 
 ![Capture](https://github.com/user-attachments/assets/d39e7160-77cf-4329-b3c9-0fa86ce66903)
+
+I thereaffter went on to use Pivot Table to create beautiful and interesting reports showcasing
+
+a. Total Sales by Product b. Total Sales by Region c. Total Sales by Month d. Top-Selling Product e. Average Sales by Product
