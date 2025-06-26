@@ -1,4 +1,4 @@
-# PROJECT TITLE: LITA_CAPSTONE_PROJECT SALES DATA
+# PROJECT TITLE: LITA CAPSTONE PROJECT SALES DATA
 
 [Project Overview](#project-overview)  
 [Analysis Tools](#analysis-tools)  
