@@ -38,5 +38,21 @@ I thereaffter went on to use Pivot Table to create beautiful and interesting rep
 
 a. Total Sales by Product b. Total Sales by Region c. Total Sales by Month d. Top-Selling Product e. Average Sales by Product
 
-### TOTAL SALES BY PRODUCT
+![Total Sales by Products](https://github.com/user-attachments/assets/3aa6e7b3-fa46-41c9-9517-fe4bfa38792f)
+
+
+![Total sales by region](https://github.com/user-attachments/assets/9dacaf4a-9bd3-4d00-a517-50c773895005)
+
+
+![Total Sales by month](https://github.com/user-attachments/assets/008e8bfd-77a4-4f53-af12-785b4e30c8d1)
+
+![Top selling product by revenue](https://github.com/user-attachments/assets/310a5f2f-3a85-4aac-b3a3-b23260c724d3)
+
+![Top selling Products](https://github.com/user-attachments/assets/0d8d4ddd-11d7-45fc-af6f-4275bcae6262)
+
+
+![Average sales per product](https://github.com/user-attachments/assets/ef6966c5-bc20-4658-afd4-d89a78a2b3ee)
+
+
+Pivort Charts were also added in order for the Sales Overview to be visualized
 
