@@ -56,3 +56,48 @@ a. Total Sales by Product b. Total Sales by Region c. Total Sales by Month d. To
 
 Pivort Charts were also added in order for the Sales Overview to be visualized
 
+
+![11](https://github.com/user-attachments/assets/404db023-63ff-4ccb-b042-1bf36341432b)
+
+![12](https://github.com/user-attachments/assets/0d6f925e-326b-47ae-80d0-1aabd9a580c9)
+
+![13](https://github.com/user-attachments/assets/3831dcaa-00a0-43ff-8412-b2a665e645ff)
+
+
+## Structured Query Language (SQL)
+
+This is the second Analysis tool I used in exploring the Sales Dataset in this project. SQL means standard language for accessing, managing and modifying data in a relational dtatabase.
+
+I used the SQL Tool to answer the following questions after I had successfully imported my data into a database i created which I named LITA_DB.
+
+- retrieve the total sales for each product category.
+- find the number of sales transactions in each region.
+- find the highest-selling product by total sales value.
+- calculate total revenue per product.
+- calculate monthly sales totals for the current year.
+- find the top 5 customers by total purchase amount.
+- calculate the percentage of total sales contributed by each region.
+- identify products with no sales in the last quarter.
+
+I ran various codes in order to be able to extract the neccesary information i needed which are embedded in the Salesdata Table on my LITA_DB
+
+
+select *from[dbo].[SalesData]
+
+- TOTAL REVENUE PER PRODUCT
+
+```sql
+
+SELECT sum (revenue)as totalsale4hat FROM SalesData WHERE PRODUCT = 'HAT'
+
+SELECT sum(revenue) as totalsale4shoes FROM SalesData WHERE PRODUCT = 'SHOES'
+
+SELECT sum(revenue) as totalsales4shirt FROM SalesData WHERE PRODUCT = 'SHIRT'
+
+SELECT sum(revenue) as totalsales4gloves FROM SalesData WHERE PRODUCT = 'GLOVES'
+
+SELECT sum(revenue)as totalsales4socks FROM SalesData WHERE PRODUCT = 'SOCKS'
+
+SELECT sum(revenue) as totalsale4jacket  FROM SalesData WHERE PRODUCT = 'JACKET'
+
+
