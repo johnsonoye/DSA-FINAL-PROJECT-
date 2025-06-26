@@ -27,7 +27,9 @@ The first thing I did was to calculate the revenue for each of the row on the Sa
 
 For the result i got from the dataset worked on 
 
+[githubsales.xlsx](https://github.com/user-attachments/files/20933803/githubsales.xlsx)
 
 
 For easier visualization I added a screenshoot of my outcome
 
+![Capture](https://github.com/user-attachments/assets/d39e7160-77cf-4329-b3c9-0fa86ce66903)
