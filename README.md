@@ -1,4 +1,5 @@
 # PROJECT TITLE: LITA CAPSTONE PROJECT SALES DATA
+## CASE STUDY 1
 
 [Project Overview](#project-overview)  
 [Analysis Tools](#analysis-tools)  
